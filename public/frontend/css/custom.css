@@ -1,0 +1,761 @@
+/*admin login header modify*/
+#header {
+  background-color: white;
+  display: block;
+  float: left;
+}
+#header #logo {
+  display: block;
+}
+.admin-sign-up {
+  color:#ffffff;
+  border-radius: 0px;
+}
+.grey-text{
+  color:#959597 !important;
+}
+
+.login-form-admin {
+    max-width: 600px;
+    padding: 10px 8% 0px;
+    background: #CACACA;
+    margin: 0 auto;
+}
+.entry-content .login-form-admin img {
+    margin: 34px 0 0 0;
+    max-width: 100%;
+    height: auto;
+}
+.entry-content .login-form-admin p {
+    margin: 0 0 15px 0;
+}
+
+.admin-login-button {
+  padding: 20px 70px;
+  font-size: 24px;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+.login-form-admin .tml-action-links .forgot-password a, .login-form-admin .tml-action-links .join-now a{
+    font-size: 18px;
+}
+.admin-login .page-title {
+    padding: 70px 0 !important;
+}
+ 
+
+/*tooltip*/
+
+a.tooltips {
+  position: relative;
+  display: inline;
+}
+a.tooltips span {
+  position: absolute;
+  min-width:250px;
+  color: #7F7E83;
+  background: #ffffff;
+  height: auto;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 0px;
+}
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 100%;
+  margin-top: -8px;
+  width: 0; height: 0;
+  border-right: 8px solid #ffffff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.9;
+  left: 100%;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: 15px;
+  z-index: 999;
+}
+
+/*tooltip*/
+
+/*admin login header modify*/
+
+	/* rubai css */
+	
+.search-aircraft-container {
+	margin-top:30px;
+}
+
+.search-aircraft-div .your-search {
+	float: left;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size:20px;
+}	
+.search-aircraft-div .search-aicraft-input input, .search-aircraft-div .search-aicraft-input select {
+	width:25%;
+	float:left;
+}
+.search-aircraft-div .search-aicraft-input select {
+  width:100%;
+}
+.search-aircraft-div .search-aicraft-input select {
+  margin-left: 2px;
+  font-size: 15px;
+  border-left: 1px solid #ddd;
+}
+.search-aircraft-div .search-aircraft-submit .button {
+	border-radius: 0px;
+    margin: 0px 10px;
+    padding: 13px 35px;
+}
+.search-aircraft-div .advanced-link {
+	border-radius: 0px;
+}
+.available-aircraft-results {
+	border-bottom: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+    margin: 15px 0 30px;
+    padding: 15px 0 50px;
+}
+.aircarft-wrapper {
+	background:#fff;
+	margin-bottom: 20px;
+}
+.aircarft-wrapper img {
+	width:100%;
+}
+.air-text-wrapper {
+	padding:20px;
+	top: -40px;
+    position: relative;
+}
+.aircarft-wrapper h1, .aircarft-wrapper h2, .aircarft-wrapper h3, .aircarft-wrapper h4{
+	margin:0;
+	padding:0;
+	font-weight:300;
+}
+.tml-action-links .join-now {
+	float:right;
+}
+.tml-action-links .forgot-password {
+	float:left;
+}
+.tml-action-links {
+	clear:both;	
+	padding-bottom:30px;
+}
+.login-u-icon {
+    float: right;
+    margin-right: 10px;
+    margin-top: -50px;
+    position: relative;
+    color:#696C75;
+    z-index: 2;
+    font-size: 16px;
+}
+.green {
+	color: #3FC1A1;
+}
+.air-rate {
+	text-align: right;
+    padding: 0 15px;
+    font-size: 25px;
+    position: relative;
+    top: -67px;
+    height: 37px;
+    z-index: 999;
+    color: #fff;
+    text-transform: uppercase;
+}
+.air-rate span {
+	font-weight:bold;
+	font-size: 42px;
+}
+.air-make-title {
+  font-weight:bold;
+  font-size:38px;
+
+}
+.air-model-title {
+  font-size:28px;
+
+  margin-bottom: 15px;
+}
+.air-make {
+	font-weight:bold;
+	font-size:26px;
+
+}
+.air-model {
+	font-size:22px;
+
+	margin-bottom: 15px;
+}
+.air-seats, .air-company, .air-airport {
+	font-size:20px;
+	
+}
+.air-airport {
+	margin-bottom:18px;
+}
+.choose-air-btn {
+    display: block;
+    margin: auto;
+    width: 192px;
+    border-radius: 0px;
+}
+.air-text-wrapper hr {
+	margin: 18px 0;
+}
+.available-aircraft-results .more-details {
+	text-align: center;
+    text-decoration: underline;
+    transition: all 0.4s;
+    font-size: 17px;
+    display: block;
+    margin-bottom: -40px;
+}
+.more-details {
+  text-align: center;
+    text-decoration: underline;
+    transition: all 0.4s;
+    font-size: 17px;
+    display: block;
+}
+.available-aircraft-results .more-details:hover, .more-details:hover {
+	text-decoration: none;
+}
+
+/* pagination */
+
+.paginate {
+  text-align: center; 
+  margin-left: 25px;
+}
+  .paginate ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+     }
+  .paginate li {
+    display: inline; 
+}
+  .paginate a {
+    border-radius: 0px;
+    
+    margin: 1px 2px;
+    padding: 5px 15px;
+    display: inline-block;
+    
+    text-decoration: none;
+    color: #717171;
+    font-size: smaller;
+    font-family: "Helvetica Neueu", Helvetica, Arial, sans-serif;
+    
+    ;
+    }
+    .paginate a:first-child, .paginate a.first {
+      margin-left: 0; }
+    .paginate a:last-child, .paginate a.last {
+      margin-right: 0; }
+    .paginate a:hover, .paginate a:focus {
+      border-color: #fff;
+      background-color: #fdfdfd;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#fafafa));
+      background-image: -webkit-linear-gradient(top, #fefefe, #fafafa);
+      background-image: -moz-linear-gradient(top, #fefefe, #fafafa);
+      background-image: -ms-linear-gradient(top, #fefefe, #fafafa);
+      background-image: -o-linear-gradient(top, #fefefe, #fafafa);
+      background-image: linear-gradient(top, #fefefe, #fafafa);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fefefe', EndColorStr='#fafafa'); }
+    .paginate a.active {
+      
+      color: #ffffff;
+      
+      background-color: #468A98;
+      }
+      .paginate a.active:hover {
+      
+      color: #468A98;
+      
+      background-color: #ffffff;
+      }
+    .paginate a.next, .paginate a.prev {
+      
+      color: #468A98;
+      
+      background-color: #ffffff;
+      }
+
+    /*air summary modal*/
+    #air-modal {
+      width: 370px;
+      border-radius: 0px;
+      background: #ffffff;
+      }
+    .air-summary-content-modal ul li {
+      width:100%;
+      line-height: 34px;
+    }
+
+    .air-summary-content-modal ul li .details {
+      width: 70%;
+      float: right;
+      display: inline-block;
+      text-align: left;
+    }
+    .air-summary-content-modal ul li .label {
+      width: 30%;
+      display: inline-block;
+      text-align: left;
+    }
+    .air-summary-content-modal h2 {
+      font-size: 28px;
+      margin-top:0;
+
+    }
+    .teal {
+      background: #468A98;
+    }
+    .close-air-btn {
+    display: block;
+    margin: auto;
+    width: 125px;
+    border-radius: 0px;
+    margin-top: 35px;
+    }
+    .back {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    border-radius: 0px;
+    margin-top: 35px;
+    font-size: 15px;
+    }
+    .margintop20 {
+      margin-top:20px;
+    }
+    .marginbottom15 {
+      margin-bottom:15px;
+    }
+    .marginbottom20 {
+      margin-bottom:20px;
+    }
+    .marginbottom10 {
+      margin-bottom:10px;
+    }
+    .neg-margin-top20 {
+      margin-top:-20px;
+    }
+    .margintop40 {
+      margin-top:40px !important;
+    }
+    .margintop50 {
+      margin-top:50px;
+    }
+    .centered-text {
+      text-align:center;
+    }
+    .no-radius {
+      border-radius: 0px;
+    }
+    .reset {
+      background: transparent;
+      border: none;
+      color: #52A1B1;
+    }
+    .reset:hover {
+      color:#41828F;
+    }
+    .centered-block {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    }
+
+    .book-aircraft .advanced-search-pick-up {
+    padding: 10px;
+    width: 42%;
+    border-right: 1px solid #eee;
+    float: left;
+    background: #FAFAFA;
+    margin-left: 8%;
+}
+.book-aircraft .advanced-search-pick-up-title, .book-aircraft .advanced-search-return-title {
+    font-weight: 300;
+}
+.book-aircraft .advanced-search-pick-up-month, .book-aircraft .advanced-search-return-month {
+    font-size: 18px;
+    color: #52A1B1;
+    margin-bottom: 0px;
+}
+.book-aircraft .advanced-search-pick-up-day, .book-aircraft .advanced-search-return-day {
+    font-size: 50px;
+    margin: 0;
+    color: #52A1B1;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+.book-aircraft .advanced-search-pick-up-time, .book-aircraft .advanced-search-return-time {
+    font-size: 18px;
+    color: #52A1B1;
+    margin-top: 0px;
+}
+    .book-aircraft .advanced-search-return {
+    padding: 10px;
+    width: 42%;
+    float: left;
+    background: #FAFAFA;
+}
+  
+select#choose_instructor {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+        margin-top: 10px;
+}
+/*advanced search*/
+#advanced-search #airport_zip_advanced, #advanced-search .radius {
+  width:49%;
+  display: inline-block;
+}
+#advanced-search .radius {
+  margin-top:-3px;
+}
+/*refined search*/
+#refined-search {
+  max-width: 996px;
+  border-radius: 0px;
+  background: #ffffff;
+  padding: 0;
+}
+#refined-search form {
+  max-width:100%;
+}
+#refined-search .label {
+  width:30%;
+  float:left;
+  text-align: left;
+  padding: 7px 0 0 30px;
+  color: #E0E0E0;
+  font-size: 20px;
+}
+#refined-search .pickup-return, #refined-search .airport-details {
+  width:70%;
+  float:right;
+}
+#refined-search .range-slider-wrapper {
+  width: 65%;
+    float: right;
+    margin-right: 4%;
+    margin-top: 43px;
+}
+#refined-search select, #refined-search input {
+  text-transform: none;
+}
+#refined-search .pickup-return input {
+  width:33%;
+  float:left;
+}
+#refined-search .pickup-return select {
+  width:100%;
+  float:left;
+}
+#refined-search input#dt_pick_up {
+    
+    border-right: 10px solid transparent;
+    border-left: 0px solid #e4e4e4;
+}
+#refined-search input#dt_return {
+      border-left: 1px solid #e4e4e4;
+      border-right: 10px solid transparent;
+}
+#refined-search .pickup-return select {
+      border-left: 1px solid #e4e4e4;
+      
+}
+#refined-search #choose_airport, #refined-search #choose_airport_id, #refined-search #airport_radius {
+  width:100%;
+  float:left;
+}
+#refined-search #airport_zip_advanced {
+  width:33%;
+  float:left;
+}
+#refined-search #choose_airport {
+  border-right:1px solid #e4e4e4;
+  padding-right: 10px;
+}
+#refined-search .advanced-search-or {
+    margin: 20px 0 20px;
+    height: 3px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    clear: both;
+    width: 66%;
+}
+#refined-search .airport_wrapper, #refined-search .airport_id_wrapper {
+  width:33%;
+}
+#refined-search .choose_make_wrapper, #refined-search .choose_model_wrapper {
+  width:22%;
+}
+#refined-search #choose_make, #refined-search #choose_model {
+  width:100%;
+  float: left;
+  border-right: 1px solid #e4e4e4;
+}
+#refined-search .increment-counter {
+  width:22%;
+  float: left;
+}
+#refined-search .increment-counter .qtyminus, #refined-search .increment-counter .qtyplus {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    color: #52A1B1;
+    font-size: 35px;
+}
+.grey-bg {
+  background: #FAFAFA;
+  width:100%;
+  min-height:150px;
+  padding: 10px 0;
+}
+
+.grey-bg select, .grey-bg input {
+  background: #FAFAFA;
+}
+#refined-search .advanced-search-or span {
+    padding: 0 11px;
+    background: #fafafa;
+    color:#E2E2E2;
+    position: relative;
+    bottom: 14px;
+    font-size: 13px;
+}
+#refined-search .btn, #refined-search .button {
+  border-radius: 0px;
+}
+
+.advanced-search-find-availability input[type="submit"] {
+    margin: 10px;
+    padding-right: 30px;
+}
+
+.advanced-search-find-availability span {
+    position: relative;
+}
+
+.advanced-search-find-availability span:after {
+    font-family: FontAwesome;
+    content: '\f105';
+    font-size: 23px;
+    position: absolute;
+    right: 20px;
+    top: -8px;
+    pointer-events: none;
+    color: #fff;
+}
+
+.blu-arrow-down{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  position:relative;
+  background:transparent;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box; 
+  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 0px; 
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 0px; 
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 0px;
+  z-index: 2;
+}
+
+#blu-arrow-down-wrapper{
+  position:relative;   
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  
+  background: #fff;
+  height: 48px;
+}
+
+#blu-arrow-down-wrapper:after{
+  content: "\f107";
+  font-family: FontAwesome;
+  padding-top: 23px;
+  position: relative;
+  right: 0px;
+  top: -61px;
+  background: transparent;
+  width: 34px;
+  line-height: 0%;
+  float: right;
+  height: 25px;
+  color: #5A99A8;
+  z-index: 2;
+  font-size: 25px;
+}
+
+#blu-arrow{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  position:relative;
+  background:transparent;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box; 
+  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 0px; 
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 0px; 
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 0px;
+  z-index: 2;
+}
+
+#blu-arrow-wrapper{
+  position:relative;   
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  width: 100%;
+  background: #fff;
+  height: 48px;
+}
+
+select:after {
+    /*content: "\f0d7";*/
+    /*font-family: FontAwesome;*/
+    padding-top: 24px;
+    position: relative;
+    right: 0px;
+    top: -62px;
+    background: #5A99A8;
+    z-index: 0;
+    width: 50px;
+    line-height: 6%;
+    float: right;
+    height: 24px;
+    color: #ffffff;
+    z-index: 1;
+    text-align: center;
+}
+
+/*terms and policy*/
+.terms-policy-agreement-content {
+    color: #fff;
+    font-size: 19px;
+}
+/*resposiveness*/
+@media (max-width: 900px) { 
+  #refined-search .pickup-return input, #refined-search .pickup-return input, #refined-search .which-company, #refined-search .airport_wrapper, #refined-search .airport_id_wrapper, #refined-search #airport_zip_advanced, #refined-search .raius-wrapper {
+    width: 100%;
+}
+
+.grey-bg {
+    min-height: 285px;
+}
+#refined-search .choose_make_wrapper, #refined-search .choose_model_wrapper, #refined-search .increment-counter {
+    width: 69% !important;
+    float: right !important;
+}
+  }
+
+
+.air-text-wrapper .choose-air-btn {
+    padding: 12px 0 10px;
+    text-align: center;
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.remodal form input {
+    text-transform: initial;
+}
+
+.errorField {
+    box-shadow: 0px 0px 5px 2px #52A1B1 !important;
+}
+
+.home .select2-container .select2-selection--single {
+    height: 48px;
+    border: 0;
+    border-left: 0px solid #aaa;
+    border-radius: 0;
+    font-size: 18px;
+    text-align: left;
+    outline: none;
+}
+
+.home .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #A9A9A9;
+    line-height: 28px;
+    padding: 12px;
+    outline: none;
+}
+
+.home .select2-results__option {
+    padding: 6px;
+    user-select: none;
+    -webkit-user-select: none;
+    font-size: 18px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    height: 35px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    margin-top: 7px;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.alert button {
+    float: right;
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+
+.select2-container {
+    vertical-align: initial;
+    outline: none;
+}

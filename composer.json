@@ -11,7 +11,10 @@
         "orchestra/installer": "~3.2",
         "orchestra/control": "~3.2",
         "stackie/adminlte-theme": "^0.1",
-        "orchestra/story": "~3.2"
+        "orchestra/story": "~3.2",
+        "orchestra/html": "~3.2",
+        "orchestra/imagine": "~3.2",
+        "edvinaskrucas/notification": "5.*"
     },
     "require-dev": {
         "orchestra/studio": "~3.2",
@@ -22,7 +25,12 @@
             "resources/database"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "Wingz\\Foundation\\": "workbench/wingz/foundation/src",
+            "Wingz\\Companies\\": "workbench/wingz/companies/src",
+            "Wingz\\Instructors\\": "workbench/wingz/instructors/src",
+            "Wingz\\Renters\\": "workbench/wingz/renters/src"
+
         }
     },
     "autoload-dev": {

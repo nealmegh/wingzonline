@@ -91,7 +91,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => 'base64:6VfnesTeL8/UE6yPX1jP6+XJuAbRsF4VSlNidIrv4iA=',
 
     'cipher' => 'AES-256-CBC',
 
@@ -180,6 +180,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\ExtensionServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        //
+        Krucas\Notification\NotificationServiceProvider::class,
+
     ],
 
     /*
@@ -238,7 +242,7 @@ return [
         'URL'        => Illuminate\Support\Facades\URL::class,
         'Validator'  => Illuminate\Support\Facades\Validator::class,
         'View'       => Illuminate\Support\Facades\View::class,
-
+        'Notification' => Krucas\Notification\Facades\Notification::class,
     ],
 
 ];

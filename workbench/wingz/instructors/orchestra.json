@@ -1,0 +1,12 @@
+{
+    "name": "Wingz Travel Instructors",
+    "description": "Wingz CMS Extension",
+    "author": "MD AHSANNUL KABIR",
+    "config": {
+        "handles": "instructors"
+    },
+    "provides": [
+        "Wingz\\Instructors\\InstructorsServiceProvider"
+    ],
+    "plugin": "Wingz\\Instructors\\InstructorsPlugin"
+}

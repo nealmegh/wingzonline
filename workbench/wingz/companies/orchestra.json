@@ -1,0 +1,12 @@
+{
+    "name": "Wingz Travel Companies",
+    "description": "Wingz CMS Extension",
+    "author": "MD AHSANNUL KABIR",
+    "config": {
+        "handles": "companies"
+    },
+    "provides": [
+        "Wingz\\Companies\\CompaniesServiceProvider"
+    ],
+    "plugin": "Wingz\\Companies\\CompaniesPlugin"
+}

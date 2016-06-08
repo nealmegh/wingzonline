@@ -1,15 +1,12 @@
 @extends('orchestra/foundation::layouts.page')
 
 @section('content')
-@include('orchestra/control::widgets.header')
 
-<div class="row">
-    <div class="twelve columns">
-        <div class="row">
-            <div class="nine columns">
+    <div class="col-md-12">
+        @include('orchestra/control::widgets._menu')
+
+            <div class="col-md-9 middle">
                 {!! $form !!}
             </div>
-        </div>
     </div>
-</div>
 @stop

@@ -32,4 +32,11 @@ class AppServiceProvider extends ServiceProvider
     {
         //
     }
+
+    protected function registerFormatManager()
+    {
+        $this->app->singleton('wingz.format', function ($app) {
+            return new FormatManager($app);
+        });
+    }
 }

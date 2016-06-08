@@ -1,0 +1,12 @@
+{
+    "name": "Wingz Travel Renters",
+    "description": "Wingz CMS Extension",
+    "author": "MD AHSANNUL KABIR",
+    "config": {
+        "handles": "renters"
+    },
+    "provides": [
+        "Wingz\\Renters\\RentersServiceProvider"
+    ],
+    "plugin": "Wingz\\Renters\\RentersPlugin"
+}

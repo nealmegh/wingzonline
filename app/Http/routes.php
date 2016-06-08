@@ -12,8 +12,8 @@ use Illuminate\Routing\Router;
 | and give it the controller to call when that URI is requested.
 |
 */
-
-$router->group(['middleware' => ['web']], function (Router $router) {
-    $router->get('/', 'WelcomeController@index');
-    $router->get('home', 'HomeController@index');
-});
+//
+//$router->group(['middleware' => ['web']], function (Router $router) {
+////    $router->get('/', 'WelcomeController@index');
+////    $router->get('home', 'HomeController@index');
+//});

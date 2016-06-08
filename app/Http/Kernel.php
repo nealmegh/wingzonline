@@ -51,6 +51,9 @@ class Kernel extends HttpKernel
      */
     protected $routeMiddleware = [
         'auth' => Middleware\Authenticate::class,
+        'renter' => Middleware\RenterMiddleware::class,
+        'company' => Middleware\CompanyMiddleware::class,
+        'instructor' => Middleware\InstructorMiddleware::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'backend' => \Orchestra\Foundation\Http\Middleware\UseBackendTheme::class,
         'can' => \Orchestra\Foundation\Http\Middleware\Can::class,
