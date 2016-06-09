@@ -758,4 +758,5 @@ fieldset {
 .select2-container {
     vertical-align: initial;
     outline: none;
+    border-left: 1px solid #e4e4e4;
 }
