@@ -14,7 +14,7 @@
             @forelse($upcomingEvents as $event)
                 <li class="green"><p>{{ $event->instructor->user->first_name }} - </p><span>7:45 AM</span><a class="fa  fa-info-mod" href="#"></a></li>
             @empty
-                <li class="empty"><p>No Upcoming Flight Found</p></li>
+                <li class="empty"><p>No Upcoming Flight</p></li>
             @endforelse
 
         </ul>
@@ -29,7 +29,7 @@
             @forelse($pendingEvents as $event)
                 <li class="green"><p>{{ $event->instructor->user->first_name }} - </p><span>{{ $event->dt_pick_up }}</span><a class="fa  fa-info-mod" href="#"></a></li>
             @empty
-                <li class="empty"><p>No Upcoming Flight Found</p></li>
+                <li class="empty"><p>No Pending Flights</p></li>
             @endforelse
         </ul>
     </div>

@@ -90,7 +90,7 @@ class InstructorController extends Controller
         $this->notifyCompany($model);
 
 
-        messages('success', 'Account Create Successfully');
+        messages('success', 'Your account has been created successfully!');
 
         return Redirect::to(handles('instructor/create'));
     }
@@ -100,7 +100,7 @@ class InstructorController extends Controller
     public function thankYou($user, $data)
     {
 
-        $subject = 'New Account Create';
+        $subject = 'Welcome to Wingz Online!';
         $message = Message::create('emails.common.common', $data, $subject);
 
         $receipt = $user->notify($message);
@@ -117,11 +117,23 @@ class InstructorController extends Controller
     {
         $company = $instructor->company;
         $user = $company->user;
-        $subject = 'New Instructor Request';
+        $subject = 'Instructor Waiting to be Approved | '.$instructor->user->first_name.' '.$instructor->user->last_name;
+
+        set_meta('title', 'Instructor Approval');
+
 
         $data = [
             'id'=> $instructor->id,
-            'code'=>$instructor->activation_token
+            'code'=>$instructor->activation_token,
+            'company'=>$company->name,
+            'instructor_first_name'=>$instructor->user->first_name,
+            'instructor_last_name'=>$instructor->user->last_name,
+            'instructor_address'=>$instructor->user->address,
+            'instructor_city'=>$instructor->user->city,
+            'instructor_state'=>$instructor->user->state,
+            'instructor_zip'=>$instructor->user->zip,
+            'instructor_phone'=>$instructor->user->phone,
+            'instructor_email'=>$instructor->user->email
         ];
         $message = Message::create('emails.company.instructor-activation', $data, $subject);
 

@@ -28,11 +28,11 @@ class ScheduleRequestController extends Controller
             $booking->confirm_token = null;
             $booking->save();
 
-            $message = 'Booking Approved Successfully';
+            $message = 'Approved';
 
             $this->sentMail($booking, $message);
 
-            messages('success', 'Booking Approved Successfully');
+            messages('success', 'Flight Approved Successfully');
         }else {
             messages('error', 'Token Not Match Or Already Approved');
         }
@@ -56,7 +56,7 @@ class ScheduleRequestController extends Controller
             $booking->confirm_token = null;
             $booking->save();
 
-            $message = 'Booking Request Rejected';
+            $message = 'Denied';
 
             $this->sentMail($booking, $message);
 
@@ -76,10 +76,15 @@ class ScheduleRequestController extends Controller
         $instructor = $booking->instructor->user;
         $renter = $booking->renter->user;
 
-        $subject = 'Booking Approved';
+        $subject = 'Flight '.$textMessage;
+
+        set_meta('title', 'Your flight on [Pickup Date] has been '.$textMessage);
 
         $data = [
-            'message' => $textMessage
+            'company_name' => $booking->company->name,
+            'company_phone' => $booking->company->phone,
+            'company_email' => $booking->company->email
+
         ];
         $message = Message::create('emails.booking.booking-approval', $data, $subject);
 

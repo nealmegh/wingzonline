@@ -103,7 +103,8 @@ class ProfileController extends Controller
     public function thankYou($user, $data)
     {
 
-        $subject = 'Password Change';
+        $subject = 'Wingz Online Password Changed';
+        set_meta('title', 'Your password has changed');
         $message = Message::create('emails.user.passwordUpdate', $data, $subject);
 
         $receipt = $user->notify($message);

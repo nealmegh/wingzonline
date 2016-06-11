@@ -74,7 +74,9 @@ $router->group(['middleware' => ['web']], function (Router $router) {
     });
 
     $router->get('email', function() {
-        return view('emails.common.common');
+        set_meta('title', 'New Account');
+        set_meta('subTitle', 'Subtitle');
+        return view('orchestra/foundation::emails.layouts.action');
     });
 });
 

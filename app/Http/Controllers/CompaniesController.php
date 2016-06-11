@@ -70,7 +70,11 @@ class CompaniesController extends Controller
         $companies->save();
 
 
-        $subject = 'New Account Create';
+        
+        $subject = 'Welcome to Wingz Online!';
+
+        set_meta('title', 'Welcome to Wingz Online!');
+        set_meta('subTitle', 'We are excited that you have chosen our application.');
         
         $data = [
             'username'=>$user->username,
@@ -86,7 +90,7 @@ class CompaniesController extends Controller
 
         }
 
-        messages('success', 'Account Create Successfully');
+        messages('success', 'Your account has been created successfully!');
         return Redirect::back();
 
     }

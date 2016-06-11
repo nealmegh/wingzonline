@@ -1,7 +1,8 @@
 @extends('app')
 
-@section('content')
+@set_meta('html::class', 'page')
 
+@section('content')
 
     <div id="content">
         <section>

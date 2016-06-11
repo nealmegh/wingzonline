@@ -85,7 +85,7 @@ class RenterController extends Controller
         ];
         $this->thankYou($user, $data);
 
-        messages('success', 'Account Create Successfully');
+        messages('success', 'Your account has been created successfully!');
         return Redirect::back();
     }
 
@@ -94,7 +94,7 @@ class RenterController extends Controller
     public function thankYou($user, $data)
     {
 
-        $subject = 'New Account Create';
+        $subject = 'Welcome to Wingz Online!';
         $message = Message::create('emails.common.common', $data, $subject);
 
         $receipt = $user->notify($message);

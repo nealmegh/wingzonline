@@ -71,7 +71,8 @@ class BookingController extends Controller
 
     private function notifyRenter( $renter, $booking)
     {
-        $subject = 'New Booking';
+        $subject = 'Flight Scheduled | '.$booking->renter->first_name.', '.$booking->renter->last_name;
+
         $data = [
             'pickup_date' => date('F j', strtotime($booking->dt_pick_up)),
             'pickup_time' => date('g:i a', strtotime($booking->dt_pick_up)),
@@ -81,13 +82,13 @@ class BookingController extends Controller
             'aircraft_model' => $booking->aircraft->aircraft_model,
             'tail_no' => $booking->aircraft->tail_no,
             'price' => $booking->price,
-            'company_name' => $booking->company->name,
-            'company_address' => $booking->company->address,
-            'company_city' => $booking->company->city,
-            'company_state' => $booking->company->state,
-            'company_zip' => $booking->company->zip,
-            'company_phone' => $booking->company->phone,
-            'company_email' => $booking->company->email
+            'renter_name' => $booking->renter->name,
+            'renter_address' => $booking->renter->address,
+            'renter_city' => $booking->renter->city,
+            'renter_state' => $booking->renter->state,
+            'renter_zip' => $booking->renter->zip,
+            'renter_phone' => $booking->renter->phone,
+            'renter_email' => $booking->renter->email
         ];
         $messageRenter = Message::create('emails.booking.new-booking', $data, $subject);
 
@@ -97,7 +98,8 @@ class BookingController extends Controller
     public function notifyCompany($company, $booking)
     {
 
-        $subject = 'New Booking';
+        $subject = 'Flight Scheduled | '.$booking->renter->first_name.', '.$booking->renter->last_name;
+
         $data = [
             'pickup_date' => date('F j', strtotime($booking->dt_pick_up)),
             'pickup_time' => date('g:i a', strtotime($booking->dt_pick_up)),
@@ -107,13 +109,13 @@ class BookingController extends Controller
             'aircraft_model' => $booking->aircraft->aircraft_model,
             'tail_no' => $booking->aircraft->tail_no,
             'price' => $booking->price,
-            'company_name' => $booking->company->name,
-            'company_address' => $booking->company->address,
-            'company_city' => $booking->company->city,
-            'company_state' => $booking->company->state,
-            'company_zip' => $booking->company->zip,
-            'company_phone' => $booking->company->phone,
-            'company_email' => $booking->company->email,
+            'renter_name' => $booking->renter->name,
+            'renter_address' => $booking->renter->address,
+            'renter_city' => $booking->renter->city,
+            'renter_state' => $booking->renter->state,
+            'renter_zip' => $booking->renter->zip,
+            'renter_phone' => $booking->renter->phone,
+            'renter_email' => $booking->renter->email,
             'type' => 'company',
             'booking'=> $booking->id,
             'code' => $booking->confirm_token
@@ -130,7 +132,7 @@ class BookingController extends Controller
 
     public function notifyInstructor($instructor, $booking)
     {
-        $subject = 'New Booking';
+        $subject = 'Flight Scheduled | '.$booking->renter->first_name.', '.$booking->renter->last_name;
         $data = [
             'pickup_date' => date('F j', strtotime($booking->dt_pick_up)),
             'pickup_time' => date('g:i a', strtotime($booking->dt_pick_up)),
@@ -140,13 +142,13 @@ class BookingController extends Controller
             'aircraft_model' => $booking->aircraft->aircraft_model,
             'tail_no' => $booking->aircraft->tail_no,
             'price' => $booking->price,
-            'company_name' => $booking->company->name,
-            'company_address' => $booking->company->address,
-            'company_city' => $booking->company->city,
-            'company_state' => $booking->company->state,
-            'company_zip' => $booking->company->zip,
-            'company_phone' => $booking->company->phone,
-            'company_email' => $booking->company->email,
+            'renter_name' => $booking->renter->name,
+            'renter_address' => $booking->renter->address,
+            'renter_city' => $booking->renter->city,
+            'renter_state' => $booking->renter->state,
+            'renter_zip' => $booking->renter->zip,
+            'renter_phone' => $booking->renter->phone,
+            'renter_email' => $booking->renter->email,
             'type' => 'instructor',
             'booking'=> $booking->id,
             'code' => $booking->confirm_token

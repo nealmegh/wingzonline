@@ -181,7 +181,7 @@ class CompaniesPresenter extends Presenter
 
             $form->fieldset('Change Password',function ($form) {
                 $form->control('input:password', 'password')->label('')->attributes(['placeholder'=>'New Password']);
-                $form->control('input:password', 'confirm_password')->label('')->attributes(['placeholder'=>'Confirm Pass']);
+                $form->control('input:password', 'confirm_password')->label('')->attributes(['placeholder'=>'Confirm Password']);
                 $form->control('input:checkbox',function($control) {
                     $control->field(function ($row) {
                         return '<div id="div_terms-policy-agreementt">

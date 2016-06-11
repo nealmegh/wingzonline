@@ -652,11 +652,15 @@ select#choose_instructor {
 
     }
     .datepicker table tr td, .datepicker table tr th {
-        width:40px;
-        /*height:40px;*/
+        /*width:36px;*/
+        height:36px;
     }
     .datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
-        background: #5ba1ad;
+        background: url("/backend/images/bg/calender-circle.png");
+        border: 0;
+        background-size: 35px;
+        background-repeat: no-repeat;
+        background-position: 50%;
         cursor: pointer;
         color:#ffffff !important;
 
@@ -683,10 +687,13 @@ select#choose_instructor {
         margin-bottom: 10px;
     }
 
-    .datepicker table tr td.active.active {
-        background: rgb(91, 161, 173);
-        border: 0;
-    }
+.datepicker table tr td.active.active, .datepicker table tr td.active.active:hover {
+    background: url("/backend/images/bg/calender-circle.png");
+    border: 0;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
 
     #dataTable_wrapper>.row:first-child {
         display: none;
@@ -897,7 +904,7 @@ select#choose_instructor {
 /*}*/
 
 .datepicker table tr td.day:hover {
-    background: rgb(91, 161, 173);
+    /*background: rgb(91, 161, 173);*/
     border: 0;
 }
 

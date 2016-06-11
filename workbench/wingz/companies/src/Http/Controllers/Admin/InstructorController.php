@@ -59,9 +59,13 @@ class InstructorController extends Controller
 
             //mail to Instructor
             $user = $instructor->user;
-            $subject = 'Instructor Approve';
+            $subject = 'Wingz Online Instructor';
 
-            $data = [];
+            $data = [
+                'message'=>'Approved',
+                'company'=>$instructor->company->name
+            ];
+            set_meta('title', 'You have been Approved');
             $message = Message::create('emails.instructor.instructor-approval', $data, $subject);
 
             $user->notify($message);
@@ -91,9 +95,14 @@ class InstructorController extends Controller
             $instructor->save();
 
             $user = $instructor;
-            $subject = 'Instructor Reject';
+            $subject = 'Wingz Online Instructor';
 
-            $data = $instructor->toArray();
+            $data = [
+                'message'=>'Denied',
+                'company'=>$instructor->company->name
+            ];
+            set_meta('title', 'You have been Approved');
+
             $message = Message::create('emails.user.instructor-approval', $data, $subject);
 
             $user->notify($message);

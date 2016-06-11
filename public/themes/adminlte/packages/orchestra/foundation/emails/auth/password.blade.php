@@ -1,17 +1,11 @@
+
 @extends('orchestra/foundation::emails.layouts.action')
 
-
 @section('content')
-    <table style="width: 90%;">
-        <tr>
-            <td>
-                <p>Your password for Wingz Online has recently changed. If this is accurate please disregard this email. If you did not authorize this change then please contact Wingz Online immediately at info@wingzonline.net</p>
-
-                Thank You
-                Wingz Online
-            </td>
-        </tr>
-    </table>
+    <p style="width: 90%;">
+        To reset your password, complete this form: {{ handles("orchestra::forgot/reset/{$token}?email={$email}") }}.<br/>
+        This link will expire in {{ config('auth.passwords.'.config('auth.defaults.passwords', 'users').'.expire', 60) }} minutes.
+    </p>
 @stop
 
 @section('footer')
